@@ -53,5 +53,5 @@ This storage solution is also applied in applications, where users create their 
 ## How to get started
 
 - Visit [supabase.com](https://supabase.com/) and create an account and a project
-
+- Inside your project navigate to the SQL-Editor/New query and paste the [sql-setup.sql](sql-setup.sql) - script
 
