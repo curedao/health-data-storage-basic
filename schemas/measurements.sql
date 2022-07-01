@@ -6,6 +6,7 @@ create table measurements
 	connector_id         int unsigned                        null comment 'Foreign key linking the connector data source from which the measurement was obtained',
 	variable_id          int unsigned                        not null comment 'Foreign key linking the variable for which we are creating the measurement records',
 	start_at             timestamp                       	 not null comment 'UTC start time for the measurement event in YYYY-MM-DD HH:MM:SS format',
+	end_at 	             timestamp                       	 not null comment 'UTC start time for the measurement event in YYYY-MM-DD HH:MM:SS format',
 	value                double                              not null comment 'The value of the measurement after conversion to the default unit for the common variable',
 	unit_id              smallint unsigned                   not null comment 'The default unit for the common variable',
 	original_value       double                              not null comment 'Value of measurement as originally submitted (before conversion to default unit defined by the common variable)',
@@ -18,9 +19,7 @@ create table measurements
 	created_at           timestamp default CURRENT_TIMESTAMP not null comment 'UTC time the measurement record was created in YYYY-MM-DD HH:MM:SS format',
 	updated_at           timestamp default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment 'UTC time the measurement record last modified in YYYY-MM-DD HH:MM:SS format',
 	error                text                                null comment 'An error message if there is a problem with the measurement quality',
-	variable_category_id tinyint unsigned                    not null comment 'Foreign key linking to the variable category',
 	deleted_at           datetime                            null comment 'The UTC time the measurement as soft-deleted in the format YYYY-MM-DD HH:MM:SS',
-	user_variable_id     int unsigned                        not null comment 'Foreign key linking to the user variable settings and statistics',
 	connection_id        int(11) unsigned                    null comment 'ID of the user API connection from which the measurement was made',
 	connector_import_id  int(11) unsigned                    null comment 'ID of the user API import batch from which the measurement was made',
 	deletion_reason      varchar(280)                        null comment 'The reason the measurement was soft-deleted.',
@@ -41,10 +40,6 @@ create table measurements
 		foreign key (unit_id) references units (id),
 	constraint measurements_user_id_fk
 		foreign key (user_id) references users (id),
-	constraint measurements_user_variables_user_variable_id_fk
-		foreign key (user_variable_id) references user_variables (id),
-	constraint measurements_variable_category_id_fk
-		foreign key (variable_category_id) references variable_categories (id),
 	constraint measurements_variables_id_fk
 		foreign key (variable_id) references variables (id)
 )
@@ -54,8 +49,8 @@ create table measurements
 create index measurements_start_at_index
 	on measurements (start_at);
 
-create index measurements_user_id_variable_category_id_start_at_index
-	on measurements (user_id, variable_category_id, start_at);
+create index measurements_user_id_start_at_index
+	on measurements (user_id, start_at);
 
 create index measurements_user_variables_variable_id_user_id_fk
 	on measurements (variable_id, user_id);
