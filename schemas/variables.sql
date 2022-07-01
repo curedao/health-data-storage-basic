@@ -23,7 +23,7 @@ CREATE TABLE `cd_variables` (
   `ref_gene_ontology_id` int(10) unsigned DEFAULT NULL COMMENT '[Reference]',
   `ref_hmdb_id` int(10) unsigned DEFAULT NULL COMMENT '[Reference]',
   `ref_icd10_id` int(10) unsigned DEFAULT NULL COMMENT '[Reference]',
-  `ref_loinc_id` varchar(10) unsigned DEFAULT NULL COMMENT '[Reference] The international standard for identifying health measurements, observations, and documents. The unique LOINC Code is a string in the format of nnnnnnnn-n.',
+  `ref_loinc_id` varchar(10) DEFAULT NULL COMMENT '[Reference] The international standard for identifying health measurements, observations, and documents. The unique LOINC Code is a string in the format of nnnnnnnn-n.',
   `ref_meddra_all_indications_id` int(10) unsigned DEFAULT NULL COMMENT '[Reference]',
   `ref_meddra_all_side_effects_id` int(10) unsigned DEFAULT NULL COMMENT '[Reference]',
   `ref_rxnorm_id` int(10) unsigned DEFAULT NULL COMMENT '[Reference]',
@@ -41,5 +41,5 @@ CREATE TABLE `cd_variables` (
   KEY `IDX_cat_unit_public_name` (`default_unit_id`,`name`,`id`) USING BTREE,
   KEY `public_deleted_at_synonyms` (`deleted_at`,`synonyms`),
   CONSTRAINT `variable_id_fk` FOREIGN KEY (`variable_id`) REFERENCES `variables` (`id`) ON DELETE SET NULL,
-  CONSTRAINT `variables_default_unit_id_fk` FOREIGN KEY (`default_unit_id`) REFERENCES `units` (`id`),
+  CONSTRAINT `variables_default_unit_id_fk` FOREIGN KEY (`default_unit_id`) REFERENCES `units` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6067536 DEFAULT CHARSET=utf8 COMMENT='Variables with their metadata for reference in measurement data points';
