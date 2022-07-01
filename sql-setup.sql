@@ -5,13 +5,39 @@
 create type public.app_role as enum ('admin', 'moderator', 'physician', 'organisation');
 create type public.app_permission as enum ('variables.write', 'measurements.write');
 create type public.user_tier as enum ('FREE', 'BASIC', 'PREMIUM');
+create type public.user_gender as enum ('MALE', 'FEMALE', 'DIVERSE');
 
 
 -- USERS
 create table public.users (
   id              uuid not null primary key, -- UUID from auth.users
-  displayName     text,
-  email           text default null
+  display_name    text,
+  email           text default null,
+  email_verified   boolean,
+  phone_number     text,
+  photo_url        text,
+  firstname       text,
+  middlename      text,
+  lastname        text,
+  country_code    text,
+  state           text,
+  city            text,
+  postal_code     text,
+  address         text,
+  address_2       text,
+  phone           text,
+  bio             text,
+  gender          user_gender not null,
+  date_of_birth   text,
+  weight_at_signup  text,
+  height_at_signup  text,
+  blood_type       text,
+  body_type        text,
+  ethnicity        text,
+  skin_type        text,
+  lifestyle        text,
+  fitness_level    text,
+  diet             text,
 );
 comment on table public.users is 'Profile data for each user.';
 comment on column public.users.id is 'References the internal Supabase Auth user.';
