@@ -1,6 +1,6 @@
 -- global_data.cd_variables definition
 
-CREATE TABLE `cd_variables` (
+CREATE TABLE `variables` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '[db-gen] Meaningless auto assigned integer for relating to other data. ',
   `string_id` varchar(200) DEFAULT NULL COMMENT '[Admin-Setting] The string id is an identifier in human_readable snake_case keywords, used as id in API properties for data exchange or in document databases and frontends. This is the ecosystem wide unique id for data sharing and is curated by the CureDAO community.',
   `slug` varchar(200) DEFAULT NULL COMMENT '[Admin-Setting] The slug is an identifier in human-readable keywords, used urls.',
