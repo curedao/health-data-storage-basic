@@ -3,7 +3,7 @@
 
 -- Custom types
 create type public.app_role as enum ('admin', 'moderator', 'physician', 'organisation');
-create type public.app_permission as enum ('variables.write', 'measurements.write');
+create type public.app_permission as enum ('variables.delete', 'measurements.delete');
 create type public.user_tier as enum ('FREE', 'BASIC', 'PREMIUM');
 create type public.user_gender as enum ('MALE', 'FEMALE', 'DIVERSE');
 
@@ -37,7 +37,7 @@ create table public.users (
   skin_type        text,
   lifestyle        text,
   fitness_level    text,
-  diet             text,
+  diet             text
 );
 comment on table public.users is 'Profile data for each user.';
 comment on column public.users.id is 'References the internal Supabase Auth user.';
@@ -87,13 +87,13 @@ language plpgsql security definer;
 -- Secure the tables
 alter table public.users
   enable row level security;
-alter table public.channels
-  enable row level security;
-alter table public.messages
-  enable row level security;
 alter table public.user_roles
   enable row level security;
 alter table public.role_permissions
+  enable row level security;
+alter table public.variables
+  enable row level security;
+alter table public.measurements
   enable row level security;
 
 create policy "Allow logged-in read access" on public.users
@@ -102,33 +102,33 @@ create policy "Allow individual insert access" on public.users
   for insert with check (auth.uid() = id);
 create policy "Allow individual update access" on public.users
   for update using ( auth.uid() = id );
-create policy "Allow logged-in read access" on public.channels
+create policy "Allow logged-in read access" on public.variables
   for select using (auth.role() = 'authenticated');
-create policy "Allow individual insert access" on public.channels
+create policy "Allow individual insert access" on public.variables
   for insert with check (auth.uid() = created_by);
-create policy "Allow individual delete access" on public.channels
+create policy "Allow individual delete access" on public.variables
   for delete using (auth.uid() = created_by);
-create policy "Allow authorized delete access" on public.channels
-  for delete using (authorize('channels.delete', auth.uid()));
-create policy "Allow logged-in read access" on public.messages
+create policy "Allow authorized delete access" on public.variables
+  for delete using (authorize('variables.delete', auth.uid()));
+create policy "Allow logged-in read access" on public.measurements
   for select using (auth.role() = 'authenticated');
-create policy "Allow individual insert access" on public.messages
+create policy "Allow individual insert access" on public.measurements
   for insert with check (auth.uid() = user_id);
-create policy "Allow individual update access" on public.messages
+create policy "Allow individual update access" on public.measurements
   for update using (auth.uid() = user_id);
-create policy "Allow individual delete access" on public.messages
+create policy "Allow individual delete access" on public.measurements
   for delete using (auth.uid() = user_id);
-create policy "Allow authorized delete access" on public.messages
-  for delete using (authorize('messages.delete', auth.uid()));
+create policy "Allow authorized delete access" on public.measurements
+  for delete using (authorize('measurements.delete', auth.uid()));
 create policy "Allow individual read access" on public.user_roles
   for select using (auth.uid() = user_id);
 
 -- Send "previous data" on change
 alter table public.users
   replica identity full;
-alter table public.channels
+alter table public.variables
   replica identity full;
-alter table public.messages
+alter table public.measurements
   replica identity full;
   
   -- inserts a row into public.users and assigns roles
