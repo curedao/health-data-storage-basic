@@ -54,4 +54,5 @@ This storage solution is also applied in applications, where users create their 
 
 - Visit [supabase.com](https://supabase.com/) and create an account and a project
 - Inside your project navigate to the SQL-Editor/New query and paste the [sql-setup.sql](sql-setup.sql) - script
+- Next, inside the same editor, paste the [Variables schema definition](schemas/variables.sql) and the [Measurements schema definition](schemas/variables.sql)
 
