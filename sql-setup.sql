@@ -149,9 +149,9 @@ create policy "Allow individual update access" on public.users
 create policy "Allow logged-in read access" on public.variables
   for select using (auth.role() = 'authenticated');
 create policy "Allow individual insert access" on public.variables
-  for insert with check (auth.uid() = created_by);
+  for insert with check (auth.uid() = creator_user_id);
 create policy "Allow individual delete access" on public.variables
-  for delete using (auth.uid() = created_by);
+  for delete using (auth.uid() = creator_user_id);
 create policy "Allow authorized delete access" on public.variables
   for delete using (authorize('variables.delete', auth.uid()));
 create policy "Allow logged-in read access" on public.measurements
