@@ -3,7 +3,6 @@
 -- Custom types
 create type public.app_role as enum ('admin', 'moderator', 'physician', 'organisation');
 create type public.app_permission as enum ('variables.delete', 'measurements.delete');
-create type public.user_tier as enum ('FREE', 'BASIC', 'PREMIUM');
 create type public.user_gender as enum ('MALE', 'FEMALE', 'DIVERSE');
 
 -- USERS
