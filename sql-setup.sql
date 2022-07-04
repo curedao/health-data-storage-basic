@@ -6,15 +6,14 @@ create type public.app_permission as enum ('variables.delete', 'measurements.del
 create type public.user_tier as enum ('FREE', 'BASIC', 'PREMIUM');
 create type public.user_gender as enum ('MALE', 'FEMALE', 'DIVERSE');
 
-
 -- USERS
 create table public.users (
   id              uuid not null primary key, -- UUID from auth.users
   display_name    text,
   email           text default null,
-  email_verified   boolean,
-  phone_number     text,
-  photo_url        text,
+  email_verified  boolean,
+  phone_number    text,
+  photo_url       text,
   firstname       text,
   middlename      text,
   lastname        text,
