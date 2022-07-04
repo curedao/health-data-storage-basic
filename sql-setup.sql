@@ -109,6 +109,22 @@ create table measurements (
     connector_import_id int null,
     deletion_reason varchar(280) null,
     original_start_at timestamp not null
+  	-- constraint measurements_pk
+		-- unique (user_id, variable_id, start_at),
+	  -- constraint measurements_connections_id_fk
+		-- foreign key (connection_id) references connections (id),
+	  -- constraint measurements_connector_imports_id_fk
+		-- foreign key (connector_import_id) references connector_imports (id),
+	  -- constraint measurements_connectors_id_fk
+		-- foreign key (connector_id) references connectors (id),
+	  -- constraint measurements_original_unit_id_fk
+		-- foreign key (original_unit_id) references units (id),
+	  -- constraint measurements_unit_id_fk
+		-- foreign key (unit_id) references units (id),
+	  -- constraint measurements_user_id_fk
+		-- foreign key (user_id) references users (id),
+	  -- constraint measurements_variables_id_fk
+		-- foreign key (variable_id) references variables (id)
 );
 comment on table public.measurements is 'Measurements are any value that can be recorded like a lab test result, daily steps, a mood rating, or apples eaten.';
 
