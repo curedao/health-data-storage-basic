@@ -196,6 +196,9 @@ create policy "Allow individual delete access" on public.variables
   for delete using (auth.uid() = creator_user_id);
 create policy "Allow authorized delete access" on public.variables
   for delete using (authorize('variables.delete', auth.uid()));
+  -- Alternative for public access:
+-- create policy  "Allow read access for all users" ON "public"."variables"
+  -- AS PERMISSIVE FOR SELECT TO public USING (true)
 create policy "Allow logged-in read access" on public.measurements
   for select using (auth.role() = 'authenticated');
 create policy "Allow individual insert access" on public.measurements
