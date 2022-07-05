@@ -53,6 +53,9 @@ This storage solution is also applied in applications, where users create their 
 ## How to get started
 
 - Visit [supabase.com](https://supabase.com/) and create an account and a project
-- Inside your project navigate to the SQL-Editor/New query and paste the [sql-setup.sql](sql-setup.sql) - script
-- Next, inside the same editor, paste the [Variables schema definition](schemas/variables.sql) and the [Measurements schema definition](schemas/variables.sql)
+- Inside your project navigate to the SQL-Editor/New query and paste the [sql-setup.sql](sql-setup.sql) - script (This will create the tables, policies, user management and the API)
+- Thats it for the Backend!
+- For an example of a browser application frontend (React) using this backend, head over to our [health-reference-browser](https://github.com/curedao/health-reference-online-browser) repo.
+
+Alternatively you can use the [Supabase Quickstart tutorial](https://supabase.com/docs/guides/with-react) for a frontend setup in any of the popular frameworks.
 
