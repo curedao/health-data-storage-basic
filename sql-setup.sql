@@ -56,7 +56,7 @@ create table public.variables (
   deletion_reason varchar(280) DEFAULT NULL,
   description text DEFAULT NULL,
   ranges jsonb DEFAULT NULL,
-  reference_urls varchar(2083) DEFAULT NULL,
+  reference_urls jsonb DEFAULT NULL,
   parent_id int DEFAULT NULL,
   ref_aact_id int DEFAULT NULL,
   ref_fdc_id int DEFAULT NULL,
@@ -69,9 +69,9 @@ create table public.variables (
   ref_rxnorm_id int DEFAULT NULL,
   ref_snomed_id int DEFAULT NULL,
   ref_uniprot_id int DEFAULT NULL,
-  synonyms varchar(600) DEFAULT NULL,
+  synonyms jsonb DEFAULT NULL,
   updated_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, --  ON UPDATE CURRENT_TIMESTAMP
-  tags varchar(600) DEFAULT NULL,
+  tags jsonb DEFAULT NULL,
   version_first_released varchar(255) DEFAULT NULL,
   version_last_changed varchar(255) DEFAULT NULL,
   unique (string_id, slug, abbreviated_name, name, canonical_variable_id)
