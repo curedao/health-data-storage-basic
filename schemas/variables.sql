@@ -33,6 +33,7 @@ create table variables
     synonyms                       varchar(600)  default NULL::character varying,
     updated_at                     timestamp     default CURRENT_TIMESTAMP not null,
     tags                           varchar(600)  default NULL::character varying,
+    variable_category_id           integer,
     version_first_released         varchar(255)  default NULL::character varying,
     version_last_changed           varchar(255)  default NULL::character varying,
     constraint variables_string_id_slug_abbreviated_name_name_canonical_va_key
