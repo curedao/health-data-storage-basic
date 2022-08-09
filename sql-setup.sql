@@ -46,7 +46,7 @@ create table public.variables (
   slug varchar(200) DEFAULT NULL,
   name varchar(125) NOT NULL,
   abbreviated_name varchar(100) DEFAULT NULL,
-  additional_meta_data text,
+  additional_meta_data jsonb DEFAULT NULL,
   canonical_variable_id int DEFAULT NULL,
   created_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   creator_user_id uuid references public.users DEFAULT NULL,
