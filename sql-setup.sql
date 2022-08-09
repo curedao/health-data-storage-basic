@@ -72,6 +72,7 @@ create table public.variables (
   synonyms jsonb DEFAULT NULL,
   updated_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, --  ON UPDATE CURRENT_TIMESTAMP
   tags jsonb DEFAULT NULL,
+  variable_category_id int NOT NULL,
   version_first_released varchar(255) DEFAULT NULL,
   version_last_changed varchar(255) DEFAULT NULL,
   unique (string_id, slug, abbreviated_name, name, canonical_variable_id)
