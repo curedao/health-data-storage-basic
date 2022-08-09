@@ -4,7 +4,6 @@
     "name": "Emotions",
     "synonyms": ["Emotion", "Feelings"],
     "description": "Do you have any emotions that fluctuate regularly?  If so, add them so I can try to determine which factors are influencing them.",
-    "string_id": "emotions",
     "slug": "emotions"
   },
   {
@@ -12,7 +11,6 @@
     "name": "Physique",
     "synonyms": ["Biometrics", "Physique"],
     "description": "I can give you easy access to your weight and other vitals. You can manually enter weight, but I recommend using a Fitbit or Withings wifi scale for the most detailed data. I can create a beautiful graph of your weight changes, so you can easily keep trac",
-    "string_id": "biometrics",
     "slug": "biometrics"
   },
   {
@@ -20,15 +18,13 @@
     "name": "Physical Activity",
     "synonyms": ["Physical Activity", "Physical Activities"],
     "description": "I get steps from a variety of sources like Fitbit & Jawbone. Even if you don't have any fitness trackers, you can manually record any physical activity, like running, cycling, or going to the gym.",
-    "string_id": "physical_activity",
-    "slug": "physical_activity"
+    "slug": "physical-activity"
   },
   {
     "id": "locations",
     "name": "Locations",
     "synonyms": ["Location", "Locations", "Geo-locations"],
     "description": "By automatically recording your location in the background using GPS, we might be able to figure out how the amount of time spent at the gym, restaurants, doctors, offices, home and work locations may be affecting you.  Another benefit of enabling this op",
-    "string_id": "locations",
     "slug": "locations"
   },
   {
@@ -36,7 +32,6 @@
     "name": "Sleep",
     "synonyms": ["Bedtime", "Sleeping"],
     "description": "I can talk to many of the most popular sleep trackers like Fitbit, Jawbone, Sleep as Android, and Withings",
-    "string_id": "sleep",
     "slug": "sleep"
   },
   {
@@ -44,7 +39,6 @@
     "name": "Social Interactions",
     "synonyms": ["Social Interactions", "Social Interaction", "Social Media"],
     "description": "A social relation or social interaction is any relationship between two or more individuals. ",
-    "string_id": "social",
     "slug": "social"
   },
   {
@@ -52,7 +46,6 @@
     "name": "Vital Signs",
     "synonyms": ["Vital Signs", "Vital Sign"],
     "description": "Vital signs include measurements like blood pressure, heart rate, respiratory rate (or pulse), and temperature.",
-    "string_id": "vitals",
     "slug": "vitals"
   },
   {
@@ -60,7 +53,6 @@
     "name": "Cognitive Performance",
     "synonyms": ["Cognition"],
     "description": "See what factors could be harming or enhancing your cognitive performance.",
-    "string_id": "cognition",
     "slug": "cognition"
   },
   {
@@ -68,7 +60,6 @@
     "name": "Symptoms",
     "synonyms": ["Symptoms", "Symptom"],
     "description": "Symptoms are the perceived effects of diseases and conditions to a human being. ",
-    "string_id": "symptoms",
     "slug": "symptoms"
   },
   {
@@ -76,7 +67,6 @@
     "name": "Nutrients",
     "synonyms": ["Nutrients", "Nutrient"],
     "description": "Nutrients are compounds in foods essential to life and health, providing us with energy, the building blocks for repair and growth and substances necessary to regulate chemical processes.",
-    "string_id": "nutrients",
     "slug": "nutrients"
   },
   {
@@ -84,7 +74,6 @@
     "name": "Health Goals",
     "synonyms": ["Goals", "Goal"],
     "description": "Health Goals are a description of a desired state of better health to be achievied through interventions. ",
-    "string_id": "goals",
     "slug": "goals"
   },
   {
@@ -101,7 +90,6 @@
       "Intervention"
     ],
     "description": "Treatments are interventions like medications, supplements, therapies but also diets and specific foods with the purpose of an effect",
-    "string_id": "treatments",
     "slug": "treatments"
   },
   {
@@ -109,7 +97,6 @@
     "name": "Activities",
     "synonyms": ["Activities", "Activity"],
     "description": "Non-physical activities like studying, meditation or reading. ",
-    "string_id": "activities",
     "slug": "activities"
   },
   {
@@ -117,7 +104,6 @@
     "name": "Foods",
     "synonyms": ["Grocery", "Foods", "Food", "Diet", "Nutrition", "Beverages"],
     "description": "Everything taken in orally for energy, taste and hydration falls into this category. ",
-    "string_id": "foods",
     "slug": "foods"
   },
   {
@@ -125,7 +111,6 @@
     "name": "Conditions",
     "synonyms": ["Conditions", "Condition"],
     "description": "Disease states or conditions that produce various symptoms. ",
-    "string_id": "conditions",
     "slug": "conditions"
   },
   {
@@ -133,7 +118,6 @@
     "name": "Environment",
     "synonyms": ["Environmental"],
     "description": "Influences to the human body and exposures from the outside like local weather conditions, toxic exposure, Noise. ",
-    "string_id": "environment",
     "slug": "environment"
   },
   {
@@ -147,7 +131,6 @@
       "Software Usage"
     ],
     "description": "Record time spend using specific software, apps or websites. Usage data of electronic devies. Time spent looking at screens or using digital services like Music, TV.",
-    "string_id": "digital",
     "slug": "digital"
   },
   {
@@ -155,7 +138,6 @@
     "name": "Other",
     "synonyms": ["Miscellaneous", "Uncategorized"],
     "description": "Last resort for variables that don't fall into any of the available categories. ",
-    "string_id": "other",
     "slug": "other"
   },
   {
@@ -163,7 +145,6 @@
     "name": "Functional tests",
     "synonyms": ["Functional", "Functional Test"],
     "description": "Functional tests measure a specific function of the human body like grip strength. ",
-    "string_id": "functional",
     "slug": "functional"
   },
   {
@@ -171,7 +152,6 @@
     "name": "Laboratory test",
     "synonyms": ["Laboratory", "Laboratory Test"],
     "description": "Tests and assays run with biofluids or collected tissue like blood, urine, saliva, stool. ",
-    "string_id": "laboratory",
     "slug": "laboratory"
   },
   {
@@ -179,7 +159,6 @@
     "name": "oObservations",
     "synonyms": ["Observation", "Emotions", "Feelings", "Preceived states"],
     "description": "Observations of perceived states of mind, emotions, feelings, health goals or non disease-related symptoms like stress. ",
-    "string_id": "observations",
     "slug": "observations"
   }
 ]
