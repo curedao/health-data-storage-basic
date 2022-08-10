@@ -14,11 +14,11 @@
     "slug": "biometrics"
   },
   {
-    "id": "physical_activity",
-    "name": "Physical Activity",
+    "id": "physical_activities",
+    "name": "Physical Activities",
     "synonyms": ["Physical Activity", "Physical Activities"],
     "description": "I get steps from a variety of sources like Fitbit & Jawbone. Even if you don't have any fitness trackers, you can manually record any physical activity, like running, cycling, or going to the gym.",
-    "slug": "physical-activity"
+    "slug": "physical-activities"
   },
   {
     "id": "locations",
@@ -79,18 +79,30 @@
   {
     "id": "treatments",
     "name": "Treatments",
-    "synonyms": [
-      "Health and Beauty",
-      "Health & Beauty",
-      "Treatments",
-      "Treatment",
-      "HealthPersonalCare",
-      "Baby Product",
-      "Home",
-      "Intervention"
-    ],
+    "synonyms": ["Treatment"],
     "description": "Treatments are interventions like medications, supplements, therapies but also diets and specific foods with the purpose of an effect",
     "slug": "treatments"
+  },
+  {
+    "id": "supplements",
+    "name": "Supplements",
+    "synonyms": ["Supplement"],
+    "description": "Supplements are orally intaken interventions without medical prescription with the purpose of an effect on health or specific conditions",
+    "slug": "supplements"
+  },
+  {
+    "id": "medications",
+    "name": "Medications",
+    "synonyms": ["Medication"],
+    "description": "Medications are orally intaken interventions with medical prescription with the purpose of an effect on diseases or specific conditions",
+    "slug": "medications"
+  },
+  {
+    "id": "therapies",
+    "name": "Therapies",
+    "synonyms": ["Therapy"],
+    "description": "Therapies are treatment activities with the purpose of an effect on health, specific diseases or specific conditions",
+    "slug": "therapies"
   },
   {
     "id": "activities",
@@ -102,7 +114,15 @@
   {
     "id": "foods",
     "name": "Foods",
-    "synonyms": ["Grocery", "Foods", "Food", "Diet", "Nutrition", "Beverages"],
+    "synonyms": [
+      "Grocery",
+      "Foods",
+      "Food",
+      "Diet",
+      "Diets",
+      "Nutrition",
+      "Beverages"
+    ],
     "description": "Everything taken in orally for energy, taste and hydration falls into this category. ",
     "slug": "foods"
   },
@@ -128,7 +148,10 @@
       "App",
       "Software",
       "Software & Mobile App",
-      "Software Usage"
+      "Software Usage",
+      "Electronics",
+      "Electronic devices",
+      "Usage of Applications"
     ],
     "description": "Record time spend using specific software, apps or websites. Usage data of electronic devies. Time spent looking at screens or using digital services like Music, TV.",
     "slug": "digital"
@@ -156,7 +179,7 @@
   },
   {
     "id": "observations",
-    "name": "oObservations",
+    "name": "observations",
     "synonyms": ["Observation", "Emotions", "Feelings", "Preceived states"],
     "description": "Observations of perceived states of mind, emotions, feelings, health goals or non disease-related symptoms like stress. ",
     "slug": "observations"
