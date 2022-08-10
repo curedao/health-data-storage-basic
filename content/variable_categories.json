@@ -7,9 +7,9 @@
     "slug": "emotions"
   },
   {
-    "id": "biometrics",
-    "name": "Physique",
-    "synonyms": ["Biometrics", "Physique"],
+    "id": "physical_measurements",
+    "name": "Physical Measurements",
+    "synonyms": ["Biometrics", "Physique", "Anthropometry", "Body Measurements", "Physical Measurements"],
     "description": "I can give you easy access to your weight and other vitals. You can manually enter weight, but I recommend using a Fitbit or Withings wifi scale for the most detailed data. I can create a beautiful graph of your weight changes, so you can easily keep trac",
     "slug": "biometrics"
   },
@@ -17,14 +17,14 @@
     "id": "physical_activities",
     "name": "Physical Activities",
     "synonyms": ["Physical Activity", "Physical Activities"],
-    "description": "I get steps from a variety of sources like Fitbit & Jawbone. Even if you don't have any fitness trackers, you can manually record any physical activity, like running, cycling, or going to the gym.",
+    "description": "Everything regarding movement and engaging muscles like walking time or duration of a workout",
     "slug": "physical-activities"
   },
   {
     "id": "locations",
     "name": "Locations",
     "synonyms": ["Location", "Locations", "Geo-locations"],
-    "description": "By automatically recording your location in the background using GPS, we might be able to figure out how the amount of time spent at the gym, restaurants, doctors, offices, home and work locations may be affecting you.  Another benefit of enabling this op",
+    "description": "By automatically recording your location in the background using GPS, the amount of time spent at the gym, restaurants, doctors, offices, home and work locations may be correlated with Health effects.",
     "slug": "locations"
   },
   {
@@ -37,7 +37,7 @@
   {
     "id": "social",
     "name": "Social Interactions",
-    "synonyms": ["Social Interactions", "Social Interaction", "Social Media"],
+    "synonyms": ["Social Interactions", "Social Interaction", "Social Media", "Social Behaviour"],
     "description": "A social relation or social interaction is any relationship between two or more individuals. ",
     "slug": "social"
   },
@@ -71,37 +71,37 @@
   },
   {
     "id": "goals",
-    "name": "Health Goals",
+    "name": "Goals",
     "synonyms": ["Goals", "Goal"],
-    "description": "Health Goals are a description of a desired state of better health to be achievied through interventions. ",
+    "description": "Health Goals or Goals in general are a description of a desired state of better health to be achievied through interventions. ",
     "slug": "goals"
   },
   {
     "id": "treatments",
     "name": "Treatments",
     "synonyms": ["Treatment"],
-    "description": "Treatments are interventions like medications, supplements, therapies but also diets and specific foods with the purpose of an effect",
+    "description": "Treatments are interventions like medications, supplements, therapies but also diets and specific foods with the purpose of an effect. ",
     "slug": "treatments"
   },
   {
     "id": "supplements",
     "name": "Supplements",
     "synonyms": ["Supplement"],
-    "description": "Supplements are orally intaken interventions without medical prescription with the purpose of an effect on health or specific conditions",
+    "description": "Supplements are orally intaken interventions without medical prescription with the purpose of an effect on health or specific conditions. ",
     "slug": "supplements"
   },
   {
     "id": "medications",
     "name": "Medications",
     "synonyms": ["Medication"],
-    "description": "Medications are orally intaken interventions with medical prescription with the purpose of an effect on diseases or specific conditions",
+    "description": "Medications are orally intaken interventions with medical prescription with the purpose of an effect on diseases or specific conditions. ",
     "slug": "medications"
   },
   {
     "id": "therapies",
     "name": "Therapies",
     "synonyms": ["Therapy"],
-    "description": "Therapies are treatment activities with the purpose of an effect on health, specific diseases or specific conditions",
+    "description": "Therapies are non orally taken in treatment activities with the purpose of an effect on health, specific diseases or specific conditions. ",
     "slug": "therapies"
   },
   {
@@ -159,29 +159,22 @@
   {
     "id": "other",
     "name": "Other",
-    "synonyms": ["Miscellaneous", "Uncategorized"],
+    "synonyms": ["Miscellaneous", "Uncategorized", "Other"],
     "description": "Last resort for variables that don't fall into any of the available categories. ",
     "slug": "other"
   },
   {
     "id": "functional",
     "name": "Functional tests",
-    "synonyms": ["Functional", "Functional Test"],
+    "synonyms": ["Functional", "Functional Test", "Functional Testing", "Function Testing", "Function Test"],
     "description": "Functional tests measure a specific function of the human body like grip strength. ",
     "slug": "functional"
   },
   {
     "id": "laboratory",
     "name": "Laboratory test",
-    "synonyms": ["Laboratory", "Laboratory Test"],
+    "synonyms": ["Laboratory", "Laboratory Test", "Home test results"],
     "description": "Tests and assays run with biofluids or collected tissue like blood, urine, saliva, stool. ",
     "slug": "laboratory"
-  },
-  {
-    "id": "observations",
-    "name": "observations",
-    "synonyms": ["Observation", "Emotions", "Feelings", "Preceived states"],
-    "description": "Observations of perceived states of mind, emotions, feelings, health goals or non disease-related symptoms like stress. ",
-    "slug": "observations"
   }
 ]
