@@ -63,6 +63,7 @@ create table public.variables (
   ref_gene_ontology_id int DEFAULT NULL,
   ref_hmdb_id int DEFAULT NULL,
   ref_icd10_id int DEFAULT NULL,
+  ref_icd11_id int DEFAULT NULL,
   ref_loinc_id varchar DEFAULT NULL,
   ref_meddra_all_indications_id int DEFAULT NULL,
   ref_meddra_all_side_effects_id int DEFAULT NULL,
