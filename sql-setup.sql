@@ -79,7 +79,7 @@ create table public.variables (
   variable_category_id 		int NOT NULL,
   version_first_released 	varchar(255) DEFAULT NULL,
   version_last_changed 		varchar(255) DEFAULT NULL,
-  unique (string_id, slug, abbreviated_name, name, canonical_variable_id)
+  unique (string_id, slug, abbreviated_name, name)
   -- UNIQUE KEY variables_string_id_uindex (string_id),
   -- KEY fk_variableDefaultUnit (default_unit_id) USING BTREE,
   -- KEY IDX_cat_unit_public_name (default_unit_id,name,id) USING BTREE,
