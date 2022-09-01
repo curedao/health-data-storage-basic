@@ -26,7 +26,7 @@ create table public.users (
   biography       text,
   gender          user_gender not null,
   date_of_birth   text,
-  blood_type       text,
+  blood_type       text
 );
 comment on table public.users is 'Profile data for each user.';
 comment on column public.users.id is 'References the internal Supabase Auth user.';
@@ -104,7 +104,7 @@ create table public.measurements (
     updated_at 		timestamp default CURRENT_TIMESTAMP not null,
     connector_id 	integer null,
     connection_id 	integer null,
-    connector_import_id integer null,
+    connector_import_id integer null
   	-- constraint measurements_pk
 		-- unique (user_id, variable_id, start_at),
 	  -- constraint measurements_connections_id_fk
