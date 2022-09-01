@@ -54,6 +54,7 @@ create table public.variables (
   additional_meta_data 		jsonb DEFAULT NULL,
   canonical_variable_id 	int DEFAULT NULL,
   created_at 			timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  creator_user_id 		uuid references public.users DEFAULT NULL,
   default_unit_id 		varchar(125) NOT NULL,
   default_value 		float DEFAULT NULL,
   description 			text DEFAULT NULL,
