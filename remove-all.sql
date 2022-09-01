@@ -1,4 +1,4 @@
--- drop trigger if exists on_auth_user_created;
+-- drop trigger if exists on_auth_user_created;  <- delete this manually
 
 drop policy if exists "Allow logged-in read access" on users;
 drop policy if exists "Allow individual insert access" on users;
@@ -23,6 +23,7 @@ drop table if exists public.user_gender;
 
 drop table if exists variables;
 drop table if exists measurements;
+drop table if exists variable_categories;
 
 drop type if exists public.user_tier;
 
@@ -31,3 +32,4 @@ drop type if exists public.user_tier;
 drop type if exists public.user_gender;
 drop type if exists public.app_role;
 drop type if exists public.app_permission;
+drop type if exists public.user_status;
