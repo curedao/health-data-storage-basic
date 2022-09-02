@@ -133,7 +133,7 @@
     "synonyms": ["Laboratory", "Laboratory Test", "Home test results"],
     "description": "Tests and assays run with biofluids or collected tissue like blood, urine, saliva, stool",
     "slug": "laboratory"
-  }.
+  },
   {
     "id": "life",
     "name": "Lifestyle & Life events",
