@@ -60,7 +60,7 @@
     "name": "Nutrition",
     "synonyms": ["Nutrients", "Nutrient", "Foods", "Food", "Nutritional Behaviour", "Beverages", "Grocery"],
     "description": "Everything intaken orally for energy, taste and hydration falls into this category, as well as nutrients, diets and nutritional behaviours, but not additional intakes like supplements and medication",
-    "slug": "nutrients"
+    "slug": "nutrition"
   },
   {
     "id": "goals",
