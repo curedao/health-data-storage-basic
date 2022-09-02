@@ -63,11 +63,11 @@
     "slug": "nutrition"
   },
   {
-    "id": "goals",
-    "name": "Goals",
-    "synonyms": ["Goals", "Goal", "Health goals", "Life goals"],
-    "description": "Health Goals or Goals in general are a description of a desired state of better health to be achievied through interventions",
-    "slug": "goals"
+    "id": "outcomes",
+    "name": "Outcomes & Goals",
+    "synonyms": ["Goals", "Goal", "Health goals", "Life goals", "Outcomes", "Outcome"],
+    "description": "Outcomes, Health Goals or Goals in general are a description of a desired state of better health or perceived states of a specific symptom to be achievied through interventions",
+    "slug": "outcomes"
   },
   {
     "id": "supplements",
