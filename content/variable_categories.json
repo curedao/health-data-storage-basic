@@ -154,5 +154,5 @@
     "synonyms": ["Miscellaneous", "Uncategorized", "Other"],
     "description": "Last resort for variables that don't fall into any of the available categories",
     "slug": "other"
-  },
+  }
 ]
