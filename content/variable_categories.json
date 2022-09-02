@@ -129,9 +129,9 @@
   },
   {
     "id": "laboratory",
-    "name": "Laboratory test",
-    "synonyms": ["Laboratory", "Laboratory Test", "Home test results"],
-    "description": "Tests and assays run with biofluids or collected tissue like blood, urine, saliva, stool",
+    "name": "Laboratory tests & Imaging",
+    "synonyms": ["Laboratory", "Laboratory Test", "Home test results", "Imaging"],
+    "description": "Tests and assays run with biofluids or collected tissue like blood, urine, saliva, stool or through imaging",
     "slug": "laboratory"
   },
   {
