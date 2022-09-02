@@ -3,141 +3,105 @@
     "id": "emotions",
     "name": "Emotions",
     "synonyms": ["Emotion", "Feelings"],
-    "description": "Do you have any emotions that fluctuate regularly?  If so, add them so I can try to determine which factors are influencing them.",
+    "description": "Emotions are subjectively perceived mental states brought on by neurophysiological changes, variously associated with thoughts, feelings, behavioural responses, and a degree of pleasure or displeasure",
     "slug": "emotions"
   },
   {
-    "id": "physical_measurements",
-    "name": "Physical Measurements",
-    "synonyms": ["Biometrics", "Physique", "Anthropometry", "Body Measurements", "Physical Measurements"],
-    "description": "I can give you easy access to your weight and other vitals. You can manually enter weight, but I recommend using a Fitbit or Withings wifi scale for the most detailed data. I can create a beautiful graph of your weight changes, so you can easily keep trac",
-    "slug": "biometrics"
+    "id": "bodymetrics",
+    "name": "Body Metrics",
+    "synonyms": ["Physique", "Anthropometry", "Body Measurements", "Physical Measurements"],
+    "description": "Physical measurements like lengths, masses and percentages of the human body",
+    "slug": "bodymetrics"
   },
   {
-    "id": "physical_activities",
-    "name": "Physical Activities",
-    "synonyms": ["Physical Activity", "Physical Activities"],
-    "description": "Everything regarding movement and engaging muscles like walking time or duration of a workout",
-    "slug": "physical-activities"
+    "id": "activities",
+    "name": "Activities",
+    "synonyms": ["Activities", "Activity", "Physical Activity", "Physical Activities"],
+    "description": "Everything regarding movement and engaging muscles like walking time or duration of a workout and Non-physical activities like studying, meditation or reading",
+    "slug": "activities"
   },
   {
     "id": "locations",
     "name": "Locations",
-    "synonyms": ["Location", "Locations", "Geo-locations"],
-    "description": "By automatically recording your location in the background using GPS, the amount of time spent at the gym, restaurants, doctors, offices, home and work locations may be correlated with Health effects.",
+    "synonyms": ["Location", "Locations", "Geo-locations", "GPS location"],
+    "description": "Through location information, the amount of time spent at the gym, restaurants, doctors, offices, home and work locations can be correlated with Health effects",
     "slug": "locations"
   },
   {
     "id": "sleep",
     "name": "Sleep",
     "synonyms": ["Bedtime", "Sleeping"],
-    "description": "I can talk to many of the most popular sleep trackers like Fitbit, Jawbone, Sleep as Android, and Withings",
+    "description": "Sleep is a naturally recurring state of mind and body, characterized by altered consciousness, relatively inhibited sensory activity, reduced muscle activity and inhibition of nearly all voluntary muscles",
     "slug": "sleep"
   },
   {
     "id": "social",
     "name": "Social Interactions",
     "synonyms": ["Social Interactions", "Social Interaction", "Social Media", "Social Behaviour"],
-    "description": "A social relation or social interaction is any relationship between two or more individuals. ",
+    "description": "A social relation or social interaction is any relationship between two or more individuals",
     "slug": "social"
   },
   {
     "id": "vitals",
     "name": "Vital Signs",
     "synonyms": ["Vital Signs", "Vital Sign"],
-    "description": "Vital signs include measurements like blood pressure, heart rate, respiratory rate (or pulse), and temperature.",
+    "description": "Vital signs include measurements like blood pressure, heart rate, respiratory rate (or pulse), and temperature",
     "slug": "vitals"
-  },
-  {
-    "id": "cognition",
-    "name": "Cognitive Performance",
-    "synonyms": ["Cognition"],
-    "description": "See what factors could be harming or enhancing your cognitive performance.",
-    "slug": "cognition"
   },
   {
     "id": "symptoms",
     "name": "Symptoms",
     "synonyms": ["Symptoms", "Symptom"],
-    "description": "Symptoms are the perceived effects of diseases and conditions to a human being. ",
+    "description": "Symptoms are the perceived or observed effects of diseases and conditions to a human being",
     "slug": "symptoms"
   },
   {
-    "id": "nutrients",
-    "name": "Nutrients",
-    "synonyms": ["Nutrients", "Nutrient"],
-    "description": "Nutrients are compounds in foods essential to life and health, providing us with energy, the building blocks for repair and growth and substances necessary to regulate chemical processes.",
+    "id": "nutrition",
+    "name": "Nutrition",
+    "synonyms": ["Nutrients", "Nutrient", "Foods", "Food", "Nutritional Behaviour", "Beverages", "Grocery"],
+    "description": "Everything intaken orally for energy, taste and hydration falls into this category, as well as nutrients, diets and nutritional behaviours, but not additional intakes like supplements and medication",
     "slug": "nutrients"
   },
   {
     "id": "goals",
     "name": "Goals",
     "synonyms": ["Goals", "Goal"],
-    "description": "Health Goals or Goals in general are a description of a desired state of better health to be achievied through interventions. ",
+    "description": "Health Goals or Goals in general are a description of a desired state of better health to be achievied through interventions",
     "slug": "goals"
-  },
-  {
-    "id": "treatments",
-    "name": "Treatments",
-    "synonyms": ["Treatment"],
-    "description": "Treatments are interventions like medications, supplements, therapies but also diets and specific foods with the purpose of an effect. ",
-    "slug": "treatments"
   },
   {
     "id": "supplements",
     "name": "Supplements",
     "synonyms": ["Supplement"],
-    "description": "Supplements are orally intaken interventions without medical prescription with the purpose of an effect on health or specific conditions. ",
+    "description": "Supplements are orally intaken interventions without medical prescription with the purpose of an effect on health or specific conditions",
     "slug": "supplements"
   },
   {
     "id": "medications",
     "name": "Medications",
     "synonyms": ["Medication"],
-    "description": "Medications are orally intaken interventions with medical prescription with the purpose of an effect on diseases or specific conditions. ",
+    "description": "Medications are orally intaken interventions with medical prescription with the purpose of an effect on diseases or specific conditions",
     "slug": "medications"
   },
   {
     "id": "therapies",
     "name": "Therapies",
     "synonyms": ["Therapy"],
-    "description": "Therapies are non orally taken in treatment activities with the purpose of an effect on health, specific diseases or specific conditions. ",
+    "description": "Therapies are non orally intaken treatment activities with the purpose of an effect on health, specific diseases or specific conditions",
     "slug": "therapies"
-  },
-  {
-    "id": "activities",
-    "name": "Activities",
-    "synonyms": ["Activities", "Activity"],
-    "description": "Non-physical activities like studying, meditation or reading. ",
-    "slug": "activities"
-  },
-  {
-    "id": "foods",
-    "name": "Foods",
-    "synonyms": [
-      "Grocery",
-      "Foods",
-      "Food",
-      "Diet",
-      "Diets",
-      "Nutrition",
-      "Beverages"
-    ],
-    "description": "Everything taken in orally for energy, taste and hydration falls into this category. ",
-    "slug": "foods"
   },
   {
     "id": "conditions",
     "name": "Conditions",
     "synonyms": ["Conditions", "Condition"],
-    "description": "Disease states or conditions that produce various symptoms. ",
+    "description": "Disease states or conditions that produce various symptoms",
     "slug": "conditions"
   },
   {
     "id": "environment",
     "name": "Environment",
     "synonyms": ["Environmental"],
-    "description": "Influences to the human body and exposures from the outside like local weather conditions, toxic exposure, Noise. ",
+    "description": "Influences to the human body and exposures from the outside like local weather conditions, toxic exposure, Noise",
     "slug": "environment"
   },
   {
@@ -153,15 +117,8 @@
       "Electronic devices",
       "Usage of Applications"
     ],
-    "description": "Record time spend using specific software, apps or websites. Usage data of electronic devies. Time spent looking at screens or using digital services like Music, TV.",
+    "description": "Record time spend using specific software, apps or websites. Usage data of electronic devies. Time spent looking at screens or using digital services like Music, TV",
     "slug": "digital"
-  },
-  {
-    "id": "other",
-    "name": "Other",
-    "synonyms": ["Miscellaneous", "Uncategorized", "Other"],
-    "description": "Last resort for variables that don't fall into any of the available categories. ",
-    "slug": "other"
   },
   {
     "id": "functional",
@@ -174,7 +131,28 @@
     "id": "laboratory",
     "name": "Laboratory test",
     "synonyms": ["Laboratory", "Laboratory Test", "Home test results"],
-    "description": "Tests and assays run with biofluids or collected tissue like blood, urine, saliva, stool. ",
+    "description": "Tests and assays run with biofluids or collected tissue like blood, urine, saliva, stool",
     "slug": "laboratory"
-  }
+  }.
+  {
+    "id": "life",
+    "name": "Lifestyle & Life events",
+    "synonyms": ["Lifestyle Behaviour", "Behaviour", "Health related behaviours", "Life Events", "Health related life events"],
+    "description": "Health related behaviours and Health related happenings in ones life",
+    "slug": "life"
+  },
+  {
+    "id": "phenotypes",
+    "name": "Phenotypes",
+    "synonyms": ["Appearances"],
+    "description": "Classifications of appearances and observations. Optical or biochemical attributes like ethnicity, skin type, blood type",
+    "slug": "phenotypes"
+  },
+  {
+    "id": "other",
+    "name": "Other",
+    "synonyms": ["Miscellaneous", "Uncategorized", "Other"],
+    "description": "Last resort for variables that don't fall into any of the available categories",
+    "slug": "other"
+  },
 ]
