@@ -121,11 +121,11 @@
     "slug": "digital"
   },
   {
-    "id": "functional",
-    "name": "Functional tests",
-    "synonyms": ["Functional", "Functional Test", "Functional Testing", "Function Testing", "Function Test"],
-    "description": "Functional tests measure a specific function of the human body like grip strength. ",
-    "slug": "functional"
+    "id": "functions",
+    "name": "Body functions & Functional tests",
+    "synonyms": ["Functional", "Functional Test", "Functional Testing", "Function Testing", "Function Test", "Body functions", "Functions"],
+    "description": "Functioning and disablities of the Human body. Functional tests measure a specific function of the human body like grip strength",
+    "slug": "functions"
   },
   {
     "id": "laboratory",
