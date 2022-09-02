@@ -65,7 +65,7 @@
   {
     "id": "goals",
     "name": "Goals",
-    "synonyms": ["Goals", "Goal"],
+    "synonyms": ["Goals", "Goal", "Health goals", "Life goals"],
     "description": "Health Goals or Goals in general are a description of a desired state of better health to be achievied through interventions",
     "slug": "goals"
   },
